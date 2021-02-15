@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF84BED125DA40570048C388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BED025DA40570048C388 /* AppDelegate.swift */; };
+		AF84BED325DA40570048C388 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BED225DA40570048C388 /* SceneDelegate.swift */; };
+		AF84BED625DA40570048C388 /* TapToSnap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF84BED425DA40570048C388 /* TapToSnap.xcdatamodeld */; };
+		AF84BED825DA40570048C388 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BED725DA40570048C388 /* ContentView.swift */; };
+		AF84BEDA25DA40580048C388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF84BED925DA40580048C388 /* Assets.xcassets */; };
+		AF84BEDD25DA40580048C388 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF84BEDC25DA40580048C388 /* Preview Assets.xcassets */; };
+		AF84BEE025DA40580048C388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF84BEDE25DA40580048C388 /* LaunchScreen.storyboard */; };
+		AF84BEEB25DA40580048C388 /* TapToSnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BEEA25DA40580048C388 /* TapToSnapTests.swift */; };
+		AF84BEF625DA40580048C388 /* TapToSnapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BEF525DA40580048C388 /* TapToSnapUITests.swift */; };
+		AF84BF1525DA408E0048C388 /* GameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0525DA408D0048C388 /* GameItem.swift */; };
+		AF84BF1625DA408E0048C388 /* PostGameTileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0625DA408D0048C388 /* PostGameTileViewModel.swift */; };
+		AF84BF1725DA408E0048C388 /* GameItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0725DA408D0048C388 /* GameItemViewModel.swift */; };
+		AF84BF1825DA408E0048C388 /* GameTileStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0825DA408D0048C388 /* GameTileStatus.swift */; };
+		AF84BF1925DA408E0048C388 /* GameTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0A25DA408D0048C388 /* GameTileView.swift */; };
+		AF84BF1A25DA408E0048C388 /* LaunchTapToSnapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0B25DA408D0048C388 /* LaunchTapToSnapView.swift */; };
+		AF84BF1B25DA408E0048C388 /* PlayGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0C25DA408D0048C388 /* PlayGameView.swift */; };
+		AF84BF1C25DA408E0048C388 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0D25DA408D0048C388 /* LeaderBoardView.swift */; };
+		AF84BF1D25DA408E0048C388 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0E25DA408D0048C388 /* ImagePickerView.swift */; };
+		AF84BF1E25DA408E0048C388 /* TimerCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF0F25DA408D0048C388 /* TimerCountDownView.swift */; };
+		AF84BF1F25DA408E0048C388 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF1025DA408D0048C388 /* LoaderView.swift */; };
+		AF84BF2025DA408E0048C388 /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF1125DA408D0048C388 /* PersistentStore.swift */; };
+		AF84BF2125DA408E0048C388 /* GameItemNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF1325DA408D0048C388 /* GameItemNetworkService.swift */; };
+		AF84BF2225DA408E0048C388 /* PostGameItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF1425DA408D0048C388 /* PostGameItemService.swift */; };
+		AF84BF2825DA40BC0048C388 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF2525DA40BC0048C388 /* Constants.swift */; };
+		AF84BF2925DA40BC0048C388 /* View+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84BF2725DA40BC0048C388 /* View+Helper.swift */; };
+		AF84BF2E25DA496A0048C388 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF84BF2D25DA49690048C388 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF84BEE725DA40580048C388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF84BEC525DA40570048C388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF84BECC25DA40570048C388;
+			remoteInfo = TapToSnap;
+		};
+		AF84BEF225DA40580048C388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF84BEC525DA40570048C388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF84BECC25DA40570048C388;
+			remoteInfo = TapToSnap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF84BECD25DA40570048C388 /* TapToSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapToSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF84BED025DA40570048C388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF84BED225DA40570048C388 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF84BED525DA40570048C388 /* TapToSnap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TapToSnap.xcdatamodel; sourceTree = "<group>"; };
+		AF84BED725DA40570048C388 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF84BED925DA40580048C388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF84BEDC25DA40580048C388 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF84BEDF25DA40580048C388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF84BEE125DA40580048C388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF84BEE625DA40580048C388 /* TapToSnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapToSnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF84BEEA25DA40580048C388 /* TapToSnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToSnapTests.swift; sourceTree = "<group>"; };
+		AF84BEEC25DA40580048C388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF84BEF125DA40580048C388 /* TapToSnapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapToSnapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF84BEF525DA40580048C388 /* TapToSnapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToSnapUITests.swift; sourceTree = "<group>"; };
+		AF84BEF725DA40580048C388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF84BF0525DA408D0048C388 /* GameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameItem.swift; sourceTree = "<group>"; };
+		AF84BF0625DA408D0048C388 /* PostGameTileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostGameTileViewModel.swift; sourceTree = "<group>"; };
+		AF84BF0725DA408D0048C388 /* GameItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameItemViewModel.swift; sourceTree = "<group>"; };
+		AF84BF0825DA408D0048C388 /* GameTileStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTileStatus.swift; sourceTree = "<group>"; };
+		AF84BF0A25DA408D0048C388 /* GameTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTileView.swift; sourceTree = "<group>"; };
+		AF84BF0B25DA408D0048C388 /* LaunchTapToSnapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchTapToSnapView.swift; sourceTree = "<group>"; };
+		AF84BF0C25DA408D0048C388 /* PlayGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayGameView.swift; sourceTree = "<group>"; };
+		AF84BF0D25DA408D0048C388 /* LeaderBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
+		AF84BF0E25DA408D0048C388 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		AF84BF0F25DA408D0048C388 /* TimerCountDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCountDownView.swift; sourceTree = "<group>"; };
+		AF84BF1025DA408D0048C388 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		AF84BF1125DA408D0048C388 /* PersistentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
+		AF84BF1325DA408D0048C388 /* GameItemNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameItemNetworkService.swift; sourceTree = "<group>"; };
+		AF84BF1425DA408D0048C388 /* PostGameItemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostGameItemService.swift; sourceTree = "<group>"; };
+		AF84BF2525DA40BC0048C388 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF84BF2725DA40BC0048C388 /* View+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Helper.swift"; sourceTree = "<group>"; };
+		AF84BF2B25DA475C0048C388 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		AF84BF2C25DA475C0048C388 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
+		AF84BF2D25DA49690048C388 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF84BECA25DA40570048C388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF84BEE325DA40580048C388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF84BEEE25DA40580048C388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF84BEC425DA40570048C388 = {
+			isa = PBXGroup;
+			children = (
+				AF84BECF25DA40570048C388 /* TapToSnap */,
+				AF84BEE925DA40580048C388 /* TapToSnapTests */,
+				AF84BEF425DA40580048C388 /* TapToSnapUITests */,
+				AF84BECE25DA40570048C388 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF84BECE25DA40570048C388 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BECD25DA40570048C388 /* TapToSnap.app */,
+				AF84BEE625DA40580048C388 /* TapToSnapTests.xctest */,
+				AF84BEF125DA40580048C388 /* TapToSnapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF84BECF25DA40570048C388 /* TapToSnap */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF0325DA408D0048C388 /* Game */,
+				AF84BED025DA40570048C388 /* AppDelegate.swift */,
+				AF84BED225DA40570048C388 /* SceneDelegate.swift */,
+				AF84BED725DA40570048C388 /* ContentView.swift */,
+				AF84BED925DA40580048C388 /* Assets.xcassets */,
+				AF84BEDE25DA40580048C388 /* LaunchScreen.storyboard */,
+				AF84BF2D25DA49690048C388 /* Preview Assets.xcassets */,
+				AF84BEE125DA40580048C388 /* Info.plist */,
+				AF84BED425DA40570048C388 /* TapToSnap.xcdatamodeld */,
+				AF84BEDB25DA40580048C388 /* Preview Content */,
+			);
+			path = TapToSnap;
+			sourceTree = "<group>";
+		};
+		AF84BEDB25DA40580048C388 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BEDC25DA40580048C388 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF84BEE925DA40580048C388 /* TapToSnapTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BEEA25DA40580048C388 /* TapToSnapTests.swift */,
+				AF84BEEC25DA40580048C388 /* Info.plist */,
+			);
+			path = TapToSnapTests;
+			sourceTree = "<group>";
+		};
+		AF84BEF425DA40580048C388 /* TapToSnapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BEF525DA40580048C388 /* TapToSnapUITests.swift */,
+				AF84BEF725DA40580048C388 /* Info.plist */,
+			);
+			path = TapToSnapUITests;
+			sourceTree = "<group>";
+		};
+		AF84BF0325DA408D0048C388 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF2325DA40BC0048C388 /* Common */,
+				AF84BF0425DA408D0048C388 /* Model */,
+				AF84BF0925DA408D0048C388 /* View */,
+				AF84BF1125DA408D0048C388 /* PersistentStore.swift */,
+				AF84BF1225DA408D0048C388 /* Service */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		AF84BF0425DA408D0048C388 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF0525DA408D0048C388 /* GameItem.swift */,
+				AF84BF0625DA408D0048C388 /* PostGameTileViewModel.swift */,
+				AF84BF0725DA408D0048C388 /* GameItemViewModel.swift */,
+				AF84BF0825DA408D0048C388 /* GameTileStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF84BF0925DA408D0048C388 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF0A25DA408D0048C388 /* GameTileView.swift */,
+				AF84BF0B25DA408D0048C388 /* LaunchTapToSnapView.swift */,
+				AF84BF0C25DA408D0048C388 /* PlayGameView.swift */,
+				AF84BF0D25DA408D0048C388 /* LeaderBoardView.swift */,
+				AF84BF0E25DA408D0048C388 /* ImagePickerView.swift */,
+				AF84BF0F25DA408D0048C388 /* TimerCountDownView.swift */,
+				AF84BF1025DA408D0048C388 /* LoaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF84BF1225DA408D0048C388 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF1325DA408D0048C388 /* GameItemNetworkService.swift */,
+				AF84BF1425DA408D0048C388 /* PostGameItemService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AF84BF2325DA40BC0048C388 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF2A25DA473B0048C388 /* Fonts */,
+				AF84BF2425DA40BC0048C388 /* Constants */,
+				AF84BF2625DA40BC0048C388 /* Helpers */,
+			);
+			name = Common;
+			path = TapToSnap/Common;
+			sourceTree = SOURCE_ROOT;
+		};
+		AF84BF2425DA40BC0048C388 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF2525DA40BC0048C388 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AF84BF2625DA40BC0048C388 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF2725DA40BC0048C388 /* View+Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AF84BF2A25DA473B0048C388 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF84BF2C25DA475C0048C388 /* Karla-Bold.ttf */,
+				AF84BF2B25DA475C0048C388 /* Karla-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF84BECC25DA40570048C388 /* TapToSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF84BEFA25DA40580048C388 /* Build configuration list for PBXNativeTarget "TapToSnap" */;
+			buildPhases = (
+				AF84BEC925DA40570048C388 /* Sources */,
+				AF84BECA25DA40570048C388 /* Frameworks */,
+				AF84BECB25DA40570048C388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapToSnap;
+			productName = TapToSnap;
+			productReference = AF84BECD25DA40570048C388 /* TapToSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF84BEE525DA40580048C388 /* TapToSnapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF84BEFD25DA40580048C388 /* Build configuration list for PBXNativeTarget "TapToSnapTests" */;
+			buildPhases = (
+				AF84BEE225DA40580048C388 /* Sources */,
+				AF84BEE325DA40580048C388 /* Frameworks */,
+				AF84BEE425DA40580048C388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF84BEE825DA40580048C388 /* PBXTargetDependency */,
+			);
+			name = TapToSnapTests;
+			productName = TapToSnapTests;
+			productReference = AF84BEE625DA40580048C388 /* TapToSnapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF84BEF025DA40580048C388 /* TapToSnapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF84BF0025DA40580048C388 /* Build configuration list for PBXNativeTarget "TapToSnapUITests" */;
+			buildPhases = (
+				AF84BEED25DA40580048C388 /* Sources */,
+				AF84BEEE25DA40580048C388 /* Frameworks */,
+				AF84BEEF25DA40580048C388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF84BEF325DA40580048C388 /* PBXTargetDependency */,
+			);
+			name = TapToSnapUITests;
+			productName = TapToSnapUITests;
+			productReference = AF84BEF125DA40580048C388 /* TapToSnapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF84BEC525DA40570048C388 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = ArchitRaiSaxena;
+				TargetAttributes = {
+					AF84BECC25DA40570048C388 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					AF84BEE525DA40580048C388 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AF84BECC25DA40570048C388;
+					};
+					AF84BEF025DA40580048C388 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AF84BECC25DA40570048C388;
+					};
+				};
+			};
+			buildConfigurationList = AF84BEC825DA40570048C388 /* Build configuration list for PBXProject "TapToSnap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF84BEC425DA40570048C388;
+			productRefGroup = AF84BECE25DA40570048C388 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF84BECC25DA40570048C388 /* TapToSnap */,
+				AF84BEE525DA40580048C388 /* TapToSnapTests */,
+				AF84BEF025DA40580048C388 /* TapToSnapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF84BECB25DA40570048C388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF84BF2E25DA496A0048C388 /* Preview Assets.xcassets in Resources */,
+				AF84BEE025DA40580048C388 /* LaunchScreen.storyboard in Resources */,
+				AF84BEDD25DA40580048C388 /* Preview Assets.xcassets in Resources */,
+				AF84BEDA25DA40580048C388 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF84BEE425DA40580048C388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF84BEEF25DA40580048C388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF84BEC925DA40570048C388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF84BED125DA40570048C388 /* AppDelegate.swift in Sources */,
+				AF84BF2825DA40BC0048C388 /* Constants.swift in Sources */,
+				AF84BED625DA40570048C388 /* TapToSnap.xcdatamodeld in Sources */,
+				AF84BF1F25DA408E0048C388 /* LoaderView.swift in Sources */,
+				AF84BF1525DA408E0048C388 /* GameItem.swift in Sources */,
+				AF84BF2225DA408E0048C388 /* PostGameItemService.swift in Sources */,
+				AF84BF1825DA408E0048C388 /* GameTileStatus.swift in Sources */,
+				AF84BF1C25DA408E0048C388 /* LeaderBoardView.swift in Sources */,
+				AF84BF1925DA408E0048C388 /* GameTileView.swift in Sources */,
+				AF84BF1E25DA408E0048C388 /* TimerCountDownView.swift in Sources */,
+				AF84BED825DA40570048C388 /* ContentView.swift in Sources */,
+				AF84BF1A25DA408E0048C388 /* LaunchTapToSnapView.swift in Sources */,
+				AF84BF1B25DA408E0048C388 /* PlayGameView.swift in Sources */,
+				AF84BF1D25DA408E0048C388 /* ImagePickerView.swift in Sources */,
+				AF84BF2925DA40BC0048C388 /* View+Helper.swift in Sources */,
+				AF84BF1625DA408E0048C388 /* PostGameTileViewModel.swift in Sources */,
+				AF84BED325DA40570048C388 /* SceneDelegate.swift in Sources */,
+				AF84BF2025DA408E0048C388 /* PersistentStore.swift in Sources */,
+				AF84BF2125DA408E0048C388 /* GameItemNetworkService.swift in Sources */,
+				AF84BF1725DA408E0048C388 /* GameItemViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF84BEE225DA40580048C388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF84BEEB25DA40580048C388 /* TapToSnapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF84BEED25DA40580048C388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF84BEF625DA40580048C388 /* TapToSnapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF84BEE825DA40580048C388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF84BECC25DA40570048C388 /* TapToSnap */;
+			targetProxy = AF84BEE725DA40580048C388 /* PBXContainerItemProxy */;
+		};
+		AF84BEF325DA40580048C388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF84BECC25DA40570048C388 /* TapToSnap */;
+			targetProxy = AF84BEF225DA40580048C388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF84BEDE25DA40580048C388 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF84BEDF25DA40580048C388 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF84BEF825DA40580048C388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF84BEF925DA40580048C388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF84BEFB25DA40580048C388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TapToSnap/Preview Content\"";
+				DEVELOPMENT_TEAM = C56U262H52;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TapToSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archit.TapToSnap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF84BEFC25DA40580048C388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TapToSnap/Preview Content\"";
+				DEVELOPMENT_TEAM = C56U262H52;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TapToSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archit.TapToSnap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF84BEFE25DA40580048C388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF4X538642;
+				INFOPLIST_FILE = TapToSnapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archit.TapToSnapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapToSnap.app/TapToSnap";
+			};
+			name = Debug;
+		};
+		AF84BEFF25DA40580048C388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF4X538642;
+				INFOPLIST_FILE = TapToSnapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archit.TapToSnapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapToSnap.app/TapToSnap";
+			};
+			name = Release;
+		};
+		AF84BF0125DA40580048C388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF4X538642;
+				INFOPLIST_FILE = TapToSnapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archit.TapToSnapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapToSnap;
+			};
+			name = Debug;
+		};
+		AF84BF0225DA40580048C388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QF4X538642;
+				INFOPLIST_FILE = TapToSnapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.archit.TapToSnapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapToSnap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF84BEC825DA40570048C388 /* Build configuration list for PBXProject "TapToSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF84BEF825DA40580048C388 /* Debug */,
+				AF84BEF925DA40580048C388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF84BEFA25DA40580048C388 /* Build configuration list for PBXNativeTarget "TapToSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF84BEFB25DA40580048C388 /* Debug */,
+				AF84BEFC25DA40580048C388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF84BEFD25DA40580048C388 /* Build configuration list for PBXNativeTarget "TapToSnapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF84BEFE25DA40580048C388 /* Debug */,
+				AF84BEFF25DA40580048C388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF84BF0025DA40580048C388 /* Build configuration list for PBXNativeTarget "TapToSnapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF84BF0125DA40580048C388 /* Debug */,
+				AF84BF0225DA40580048C388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF84BED425DA40570048C388 /* TapToSnap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF84BED525DA40570048C388 /* TapToSnap.xcdatamodel */,
+			);
+			currentVersion = AF84BED525DA40570048C388 /* TapToSnap.xcdatamodel */;
+			path = TapToSnap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF84BEC525DA40570048C388 /* Project object */;
+}
